@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>TODOLIST</title>
+    <link href="app/assets/css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div ng-controller="todoController as vm">
+
+
+    <div class="mainContainer">
+        <div class="beforeDate">
+            <div class="beforeDateHeader">
+                    Before Date
+            </div>
+            <div class="completebefore">
+                <h4>Complete</h4>
+
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <div id="table">
+                        <tr ng-repeat="completeb in vm.completebefore">
+                            <td>{{completeb.title}}</td>
+                            <td>{{completeb.description}}</td>
+                            <td>{{completeb.date}}</td>
+                        </tr>
+                       </div>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="incompletebefore">
+                <h4>Incomplete</h4>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="completeb in vm.incompletebefore">
+                        <td>{{completeb.title}}</td>
+                        <td>{{completeb.description}}</td>
+                        <td>{{completeb.date}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="afterDate">
+            <div class="afterDateHeader">
+                    After Date
+            </div>
+            <div class="completeafter">
+                <h4>Complete</h4>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="completeb in vm.completeafter">
+                        <td>{{completeb.title}}</td>
+                        <td>{{completeb.description}}</td>
+                        <td>{{completeb.date}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="incompleteafter">
+                <h4>Incomplete</h4>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="completeb in vm.incompleteafter">
+                        <td>{{completeb.title}}</td>
+                        <td>{{completeb.description}}</td>
+                        <td>{{completeb.date}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- js include -->
+<script src="app/vendor/angular.js"></script>
+<script src="app/vendor/jquery-1.12.1.js"></script>
+<script type="text/javascript" src="app/assets/js/searchFilter.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/core/todofactory.js"></script>
+<script src="app/core/todoprocessor.js"></script>
+<script src="app/views/controller.js"></script>

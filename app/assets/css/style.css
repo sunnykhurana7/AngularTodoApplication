@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.mainContainer {
+    overflow: hidden;
+}
+.beforeDate {
+    width: 48%;
+    float: left;
+    margin: 0 1%;
+}
+
+.afterDate {
+    width:48%;
+    float: left;
+    margin: 0 1%;
+
+}
+
+.beforeDateHeader{
+    text-align: center;
+    background-color: red;
+    height: 50px;
+    padding-top: 8px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.afterDateHeader{
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    padding-top: 8px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.completebefore {
+    width:50%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.incompletebefore {
+    width:50%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.completeafter {
+    width:50%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.incompleteafter {
+    width:50%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width:100%;
+}
